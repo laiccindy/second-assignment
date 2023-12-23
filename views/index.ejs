@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Games Inventory</title>
+</head>
+<body>
+  <h1>Video Games Inventory</h1>
+
+  <!-- Form to add a new game -->
+  <form id="addGameForm">
+    <label for="title">Title:</label>
+    <input type="text" id="title" required>
+
+    <label for="platform">Platform:</label>
+    <input type="text" id="platform" required>
+
+    <label for="genre">Genre:</label>
+    <input type="text" id="genre" required>
+
+    <label for="releaseDate">Release Date:</label>
+    <input type="date" id="releaseDate" required>
+
+    <button type="submit">Add Game</button>
+  </form>
+
+  <!-- Form to update a game -->
+  <form id="updateGameForm">
+    <label for="updateTitle">Title:</label>
+    <input type="text" id="updateTitle" required>
+
+    <label for="updatePlatform">Platform:</label>
+    <input type="text" id="updatePlatform" required>
+
+    <label for="updateGenre">Genre:</label>
+    <input type="text" id="updateGenre" required>
+
+    <label for="updateReleaseDate">Release Date:</label>
+    <input type="date" id="updateReleaseDate" required>
+
+    <button type="submit">Update Game</button>
+  </form>
+
+  <!-- Form to search for games -->
+  <form id="searchForm">
+    <label for="searchInput">Search:</label>
+    <input type="text" id="searchInput">
+    <button type="submit">Search</button>
+  </form>
+
+  <!-- Display the list of games -->
+  <h2>Games:</h2>
+  <ul id="gamesList"></ul>
+
+  <script src="index.js"></script>
+</body>
+</html>
